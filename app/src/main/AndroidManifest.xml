@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eu.tutorials.a7_minutesworkoutapp">
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".WorkOutApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:label="7 Minute Workout"
+        android:theme="@style/Theme.7MinutesWorkoutApp">
+        <activity
+            android:name=".storemaps"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Choice"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.mydiary.login"
+            android:exported="true"
+            android:label="Workout assistance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.myownapp.register"
+            android:exported="false"></activity>
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".BMIActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".FinishActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".ExerciseActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"></activity>
+    </application>
+
+</manifest>

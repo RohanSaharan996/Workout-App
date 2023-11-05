@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".storemaps"
+    android:background="@drawable/loginbg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: "
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_margin="15dp"
+        />
+
+    <EditText
+        android:id="@+id/enterloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Enter Address"
+        android:layout_margin="15dp"
+        />
+
+    <Button
+        android:id="@+id/findSNS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Gym N Store"
+        android:layout_margin="15dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locality"
+        android:layout_margin="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tvadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_margin="15dp"
+        />
+
+        <TextView
+            android:id="@+id/lati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_margin="15dp"
+            android:hint="latitude of given location"
+            />
+
+
+
+        <TextView
+            android:id="@+id/longit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_margin="15dp"
+            android:hint="longitude of given location"
+            />
+
+
+
+
+
+</LinearLayout>

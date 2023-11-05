@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/fr1"
+    android:orientation="vertical"
+  android:paddingLeft="80dp">
+    <!--    tools:context=".register"-->
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Registration Form"
+        android:paddingTop="20dp"
+        android:textSize="24dp"/>
+
+    <EditText
+        android:id="@+id/sname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=""
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="16dp"
+        android:layout_margin="20dp"
+        android:minHeight="48dp"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"/>
+
+    <EditText
+        android:id="@+id/pno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:textSize="16dp"
+        android:layout_margin="20dp"
+        android:minHeight="48dp"
+        android:hint="Phoneno."
+        android:maxLength="10"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/dob"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text=""-->
+<!--        android:minHeight="48dp"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:hint="Date Of Birth" />-->
+
+    <EditText
+        android:id="@+id/pswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=""
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Register"
+        android:background="@drawable/edit_text_border"/>
+
+</LinearLayout>
